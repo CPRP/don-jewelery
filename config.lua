@@ -9,7 +9,7 @@ Config.VangelicoHours = { -- Store Hours
 
 Config.Cooldown = 5 * (60 * 2000) -- where x is minutes ie. x * (60 * 2000) \\ For door auto lock function
 Config.Timeout = 5 * (60 * 2000) -- where x is minutes ie. x * (60 * 2000) \\ For case smashing cooldown
-Config.RequiredCops = 0
+Config.RequiredCops = 3
 
 Config.Doors = {
     [1] = { -- City Vangelico's

@@ -124,6 +124,18 @@ Config.WhitelistedWeapons = {
     [`weapon_microsmg`] = {
         ["timeOut"] = 5000
     },
+    [`weapon_mossberg`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_uzi`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_glock17`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_ar15`] = {
+        ["timeOut"] = 5000
+    },
 }
 
 Config.VitrineRewards = {

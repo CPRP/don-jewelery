@@ -1,5 +1,5 @@
 # don-jewelery
-Jewelery Robbery for QBCore with 3 stores, Thermite, VarHack and auto-lock/unlock doors!
+Jewelery Robbery for QBCore with 1 or 3 stores, Thermite, VarHack and auto-lock/unlock doors!
 
 # Credits
 - [Holiday95](https://github.com/Holidayy95/qb-jewelery) For their fork of qb-jewelery which this is based on, and giving me the idea.
@@ -12,33 +12,67 @@ Jewelery Robbery for QBCore with 3 stores, Thermite, VarHack and auto-lock/unloc
 - [qb-target](https://github.com/qbcore-framework/qb-target)
 - [ps-ui](https://github.com/Project-Sloth/ps-ui)
 
+## *Optional Dependancies*
+- [ps-dispatch](https://github.com/Project-Sloth/ps-dispatch)
+- [qb-policejob](https://github.com/qbcore-framework/qb-policejob)
+
 # New Features
-- (Not really a "new" feature but) Optimised script, running at 0~0.1ms, only hitting 0.1ms when it locks or unlocks a door after a hack.
+- (Not really a "new" feature but) Optimised script, running at 0~0.1ms, only hitting 0.1ms when it locks or unlocks a door after a hack. 
 - 2 New stores to rob // Grapeseed & Paleto
+- Config option for just the base GTA Vangelico's Jewellers or all 3.
+- Config option for base qb police alerts or ps-dispatch.
 - Doors now lock depending of the time of day, and store is "unthievable" during opening hours.
+- Police alerts for thermite have a higher chance when closer to business close or open.
+- Police alerts for smashing the cases can be disabled by hacking the main Vangelico's PC.
 - Cases will actually smash after you hit them, and reset after cooldown.
 - Thermite the stores fusebox to open the front door at night.
 - Hack into Vinewood Vangelico's PC to unlock all Vangelico's for 5 minutes (or whatever you set the cooldown to).
 
-# Preview
+# Previews
 
 - [Don Jewelery](https://youtu.be/t-MO9yvzlx4)
 - [Cases](https://streamable.com/5xcg40)
+- [Dispatch Pt 1](https://streamable.com/3lspsx)
+- [Dispatch Pt 2](https://streamable.com/c9zs9z)
 
 # Store MLO's
 All store locations are for GigZ Jewelers' except for the base GTA one. It's a free map, link below:
 - [GigZ Jewel Store](https://forum.cfx.re/t/mlo-jewel-store-by-gigz/4857261)
 - **MAKE SURE TO INSTALL THE HEIST VERSION**
 - If you're using these MLO's you'll need to use my updated fxmanifest.lua and interiorproxies.meta in don-jewelery/gigz-jewel-fix/
+- You'll also need to add the following code to qb-policejob/config.lua in Config.SecurityCameras after line 100 or after index 34 (Vangelico's Jewelers CAM#4);
+```
+[35] = {label = "Vangelico's Grapeseed CAM#1", coords = vector3(1645.27, 4886.01, 44.7), r = {x = -35.0, y = 0.0, z = -141.82}, canRotate = true, isOnline = true},
+[36] = {label = "Vangelico's Paleto CAM#1", coords = vector3(-374.46, 6045.52, 34.05), r = {x = -35.0, y = 0.0, z = -105.09}, canRotate = true, isOnline = true},
+```
+- **It's important these cameras keep the same index as above and if you alter it, you should know what your doing.**
+
+
+### If you're using the config option for one store, and don't plan to use all three;
+- Don't install the store MLO's or the gigz-jewel-fix to your server.
+- Don't add the door locks for Grapeseed or Paleto to the qb-doorlocks configs file.
+- Don't add the new Cam ID's to qb-policejob.
+- Set Config.OneStore = true.
 
 # Important Config
 ```
 Config.VangelicoHours = { -- Store Hours
     range = {
         open = 6, -- When the doors unlock
-        close = 17 -- When they lock for the night (for some reason this is actually 6pm)
+        close = 18 -- When they lock for the night
+    },
+    alertnight = {
+        start = 18, -- The start of higher chance alerts in the evening
+        fin = 20 -- The end of higher chance alerts in the evening
+    },
+    alertmorn = {
+        start = 4, -- The start of higher chance alerts in the morning
+        fin = 6 -- The end of higher chance alerts in the morning
     }
 } 
+
+Config.OneStore = false -- Set to true if using just the main Vangelico's Jewellers
+Config.PSDispatch = true -- Set to false for base qb-policejob alerts or true to use ps-dispatch alerts
 
 Config.Cooldown = 5 * (60 * 2000) -- where x is minutes ie. x * (60 * 2000) \\ For door auto lock function
 Config.Timeout = 5 * (60 * 2000) -- where x is minutes ie. x * (60 * 2000) \\ For case smashing cooldown
@@ -71,7 +105,8 @@ Config.VarHackSettings = {
     time = 20 -- time the hack displays for
 }
 ```
-# Add to qb-doorlock/Configs/
+# Add to qb-doorlock/configs/ 
+**(As a new .lua file inside the configs folder)**
 ```
 Config.DoorList['jewelery-citymain'] = {
     doorType = 'double',
@@ -157,3 +192,8 @@ Config.DoorList['jewelery-palsec'] = {
 
 This is not a QBCore script nor is it maintained by them, please refer to my discord for any issues! 
 - [discord](https://discord.gg/tVA58nbBuk)
+
+# Changelog
+
+- v1.1.6 // Added Server Event, three new variables and changed resource officially from qb-jewellery to don-jewellery. Server Event, "don-jewellery:server:StoreHit", sets one of the new variables (cityHit, grapeHit and palHit) true or false for all clients, now people other than the person who thermited can actually rob the store again.
+- Started at 1.1.6..... WhAt A n00b

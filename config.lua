@@ -102,27 +102,6 @@ Config.Hacks = {
 }
 
 Config.WhitelistedWeapons = {
-    [`weapon_assaultrifle`] = {
-        ["timeOut"] = 5000
-    },
-    [`weapon_carbinerifle`] = {
-        ["timeOut"] = 5000
-    },
-    [`weapon_pumpshotgun`] = {
-        ["timeOut"] = 5000
-    },
-    [`weapon_sawnoffshotgun`] = {
-        ["timeOut"] = 5000
-    },
-    [`weapon_compactrifle`] = {
-        ["timeOut"] = 5000
-    },
-    [`weapon_autoshotgun`] = {
-        ["timeOut"] = 5000
-    },
-    [`weapon_crowbar`] = {
-        ["timeOut"] = 5000
-    },
     [`weapon_pistol`] = {
         ["timeOut"] = 5000
     },
@@ -132,65 +111,236 @@ Config.WhitelistedWeapons = {
     [`weapon_combatpistol`] = {
         ["timeOut"] = 5000
     },
+    [`weapon_pistol`] = {
+        ["timeOut"] = 5000
+    },
     [`weapon_appistol`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_stungun`] = {
         ["timeOut"] = 5000
     },
     [`weapon_pistol50`] = {
         ["timeOut"] = 5000
-    }, 
+    },
+    [`weapon_snspistol`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_snspistol_mk2`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_pistol`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_heavypistol`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_vintagepistol`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_flaregun`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_marksmanpistol`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_revolver`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_revolver_mk2`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_doubleaction`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_raypistol`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_ceramicpistol`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_navyrevolver`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_gadgetpistol`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_stungun_mp`] = {
+        ["timeOut"] = 5000
+    },
     [`weapon_microsmg`] = {
         ["timeOut"] = 5000
     },
-    [`weapon_mossberg`] = {
+    [`weapon_smg`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_smg_mk2`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_assaultsmg`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_combatpdw`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_machinepistol`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_minismg`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_raycarbine`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_pumpshotgun`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_pumpshotgun_mk2`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_sawnoffshotgun`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_assaultshotgun`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_bullpupshotgun`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_musket`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_heavyshotgun`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_dbshotgun`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_autoshotgun`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_combatshotgun`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_assaultrifle`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_assaultrifle_mk2`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_carbinerifle`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_carbinerifle_mk2`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_advancedrifle`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_specialcarbine`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_specialcarbine_mk2`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_bullpuprifle`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_bullpuprifle_mk2`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_compactrifle`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_militaryrifle`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_heavyrifle`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_mg`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_combatmg`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_combatmg_mk2`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_gusenberg`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_ak47`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_m70`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_de`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_fnx45`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_m9`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_m1911`] = {
         ["timeOut"] = 5000
     },
     [`weapon_uzi`] = {
         ["timeOut"] = 5000
     },
+    [`weapon_mac10`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_mossberg`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_huntingrifle`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_mp9`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_m110`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_hk416`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_ak74`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_aks74`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_glock22`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_glock18c`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_mp5`] = {
+        ["timeOut"] = 5000
+    },
     [`weapon_glock17`] = {
+        ["timeOut"] = 5000
+    },
+    [`weapon_m4`] = {
         ["timeOut"] = 5000
     },
     [`weapon_ar15`] = {
         ["timeOut"] = 5000
     },
-    [`weapon_m4`] = {
-        ["timeOut"] = 10000
-    },
-    [`weapon_hk416`] = {
-        ["timeOut"] = 10000
+    [`weapon_remington`] = {
+        ["timeOut"] = 5000
     },
     [`weapon_scarh`] = {
-        ["timeOut"] = 10000
+        ["timeOut"] = 5000
     },
-    [`weapon_de`] = {
-        ["timeOut"] = 10000
-    },
-    [`weapon_fnx45`] = {
-        ["timeOut"] = 10000
-    },
-    [`weapon_remington`] = {
-        ["timeOut"] = 10000
-    },
-    [`weapon_ak47`] = {
-        ["timeOut"] = 10000
-    },
-    [`weapon_m70`] = {
-        ["timeOut"] = 10000
-    },
-    [`weapon_mp9`] = {
-        ["timeOut"] = 10000
-    },
-    [`weapon_mac10`] = {
-        ["timeOut"] = 10000
-    },
-    [`weapon_m9`] = {
-        ["timeOut"] = 10000
-    },
-    [`weapon_m1911`] = {
-        ["timeOut"] = 10000
-    },
-    [`weapon_m110`] = {
-        ["timeOut"] = 10000
+    [`weapon_mk14`] = {
+        ["timeOut"] = 5000
     },
 }
 

@@ -190,7 +190,7 @@ QBCore.Functions.CreateCallback('don-jewellery:server:GetCops', function(source,
   local src = source
 	local amount = 0
   for _, v in pairs(QBCore.Functions.GetQBPlayers()) do
-    if v.PlayerData.job.name == "police" and v.PlayerData.job.onduty then
+    if v.PlayerData.job.name == "police" or v.PlayerData.job.name == "sapr" or v.PlayerData.job.name == "sasp" or v.PlayerData.job.name == "bcso" and v.PlayerData.job.onduty then
       amount = amount + 1
     end
   end

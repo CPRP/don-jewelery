@@ -369,28 +369,28 @@ Config.VitrineRewards = {
     item = 'rolex',
     ['Amounts'] = {
       min = 1,
-      max = 4
+      max = 3
     }
   },
   [2] = {
     item = 'diamond_ring',
     ['Amounts'] = {
       min = 1,
-      max = 4
+      max = 3
     }
   },
   [3] = {
     item = 'goldchain',
     ['Amounts'] = {
       min = 1,
-      max = 4
+      max = 3
     }
   },
   [4] = {
     item = '10kgoldchain',
     ['Amounts'] = {
-      min = 1,
-      max = 4
+      min = 2,
+      max = 6
     }
   },
 }

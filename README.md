@@ -46,7 +46,7 @@ Jewellery Robbery for QBCore with 1 or 3 stores, Thermite, VarHack and auto-lock
 
 ## Translations
 
-- The english locale is the only fully completed one, and has been recently updated to include all notifications. If you would like to help translate this resource, please make a pull request with the translation.
+- Please open an issue for translations, I'll add them in a following update.
 
 ## Store MLO's
 
@@ -173,7 +173,7 @@ Config.Stores = {
 - // Create a file named `jewellery_stores` in qb-doorlock/config/ and copy the Door Config from the README into it.
 
 - Set to `ox` for ox_doorlock
-- // Uncomment '@ox_lib/init.lua' from the fxmanifest.lua, create a file named `jewellery_stores` in ox_doorlock/config/ and copy the Door Config from the README into it.
+- // Uncomment '@ox_lib/init.lua' from the fxmanifest.lua, create a file named `jewellery_stores` in ox_doorlock/convert/ and copy the Door Config from the README into it.
 
 - Set to `cd` for cd_doorlock
 - // Create a Group named `Jewellery Stores` through the in-game menu and add the copy the Door Config from the README into it.
@@ -365,11 +365,3 @@ How your doorlocks should look on [cd_doorlock](https://forum.cfx.re/t/paid-code
 This is not a QBCore script nor is it maintained by them, please refer to my discord for any issues!
 
 - [discord](https://discord.gg/tVA58nbBuk)
-
-## Changelog
-
-- v1.1.9 - Fixed Missing Convar Check for Fr Translation
-- v1.1.8 - Linting and Updated Readme
-- v1.1.7 - Added Missing Event Handlers
-- v1.1.6 - Added Server Event, three new variables and changed resource officially from qb-jewellery to don-jewellery. Server Event, "don-jewellery:server:StoreHit", sets one of the new variables (cityHit, grapeHit and palHit) true or false for all clients, now people other than the person who thermited can actually rob the store again.
-- Started at 1.1.6..... WhAt A n00b
